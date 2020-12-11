@@ -1,0 +1,26 @@
+
+class Vehicle {
+  //properties
+  int id;
+  String brand;
+  String color;
+  double price;
+  DateTime DateOfManufacture;
+
+  //methods
+  void start() {
+    print("The ${brand}${id} is started.");
+  }
+
+  void stop() {
+    print("The ${brand}${id} is stopped.");
+  }
+}
+
+void main() {
+  Vehicle ferrari = new Vehicle();
+  ferrari.brand = "Ferrari";
+  ferrari.id = 1;
+  ferrari.start();
+}
+
