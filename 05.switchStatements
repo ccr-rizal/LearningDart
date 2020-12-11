@@ -1,0 +1,12 @@
+void main() {
+  String day = "Sunny";
+  switch (day) {
+    case "Sunny":
+      print("Feel free to go outside and enjoy");
+      break;
+    case "Rainy":
+      print("Make sure you are carrying an umbrella while going outside.");
+      break;
+  }
+}
+
