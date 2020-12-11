@@ -1,0 +1,51 @@
+
+void main() {
+  String name = "Shishir Rijal";
+  int age = 19;
+  double height = 5.615245;
+  bool isMarried = false;
+  DateTime now = new DateTime.now();
+  List<String> foodItems = [
+    "Momo",
+    "Chowmein",
+    "Sekuwa",
+    "ChickenFry",
+    "French-Fries"
+  ];
+  Map<String, double> monthlyExpense = {
+    "House Rent": 7000,
+    "Clothing": 5000,
+    "Food": 9000,
+    "Hygiene": 2000,
+    "Phone": 2000,
+    "Education": 8000,
+  };
+  print("Hey, My name is " + name);
+  print("I am ${age} years old and ${height.toStringAsFixed(2)} feet tall");
+  print(height.toStringAsFixed(2).runtimeType);
+  print("I am married = ${isMarried}");
+
+  double priceOfGold = 1993.098347243743;
+  print("1 tola gold costs only Rs. ${priceOfGold.truncate()}");
+  int goldPrice = int.parse("${priceOfGold}", onError: (source) => 0);
+  print(goldPrice);
+
+  //DateTime
+  print("The date today is ${now}");
+  print("The year is ${now.year}");
+  //List
+  print("My favourite food items are:\n${foodItems}.");
+  print("OR, Let's say like this:");
+  for (int i = 0; i < foodItems.length; i++) {
+    print("${i + 1}. ${foodItems[i]}");
+  }
+
+//Working With Map
+  print("My monthly expenses count as below\n${monthlyExpense}");
+  print("OR, Let's say like this:");
+  var things = monthlyExpense.keys.toList();
+  var price = monthlyExpense.values.toList();
+  for (int i = 0; i < things.length; i++) {
+    print("${things[i]} = ${price[i]}");
+  }
+}
