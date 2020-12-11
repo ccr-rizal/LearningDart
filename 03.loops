@@ -1,0 +1,28 @@
+
+void main() {
+  //For Loop
+  for (int i = 0; i < 100; i++) {
+    print(i + 1);
+  }
+
+  //WhileLoop
+  var x = 15;
+  while (x > 5) {
+    print(x);
+    x--;
+  }
+
+  //Do while loop
+  var y = 5;
+  do {
+    print(y);
+    y++;
+  } while (y <= 20);
+}
+
+//For Each Loop
+  var names = ["Alina", "Sapana", "Sandhya", "Swostika"];
+  for (var name in names) {
+    print(name);
+  }
+  
