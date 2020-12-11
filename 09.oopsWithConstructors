@@ -1,0 +1,35 @@
+
+class Vehicle {
+  //prop
+  int id;
+  String brand;
+  String color;
+  double price;
+  DateTime dateOfManufacture;
+
+  //Adding a constructor to initialize the values
+  Vehicle(this.id, this.brand, this.color, this.price, this.dateOfManufacture);
+
+  //methods
+  void start() {
+    print("The ${brand}${id} is started.");
+  }
+
+  void stop() {
+    print("The ${brand}${id} is stopped.");
+  }
+
+  void vechicleDetail() {
+    print(
+        "ID = $id\nBrand = $brand\nColor = $color\nManufactured on = $dateOfManufacture\nPrice = $price\n");
+  }
+}
+
+void main() {
+  Vehicle ferrari =
+      new Vehicle(001, "Ferrari", "Red", 1200000.35, DateTime(2001 - 12 - 23));
+  ferrari.start();
+  ferrari.vechicleDetail();
+  ferrari.stop();
+}
+
