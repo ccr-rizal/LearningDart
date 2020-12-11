@@ -1,0 +1,9 @@
+
+
+void main() {
+  print("The sum is ${totalSum(12, 25)}");
+}
+
+int totalSum(int a, int b, [c = 0]) {
+  return a + b + c;
+}
